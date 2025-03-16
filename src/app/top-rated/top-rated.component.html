@@ -1,1 +1,11 @@
-<p>top-rated works!</p>
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+<h2>{{ title }}</h2>
+<div *ngIf="!errorMessage && topRatedMovies.length" class="top-rated-container">
+  <div *ngFor="let movie of topRatedMovies" class="top-rated-item">
+    <img
+      *ngIf="movie.poster_path"
+      [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
+      alt="{{ movie.title }} poster"
+    />
+  </div>
+</div>
