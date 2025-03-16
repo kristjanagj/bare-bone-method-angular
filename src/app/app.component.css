@@ -1,0 +1,10 @@
+header {
+  background-image: url("../images/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.main-page {
+  width: 1300px;
+  margin: auto;
+}

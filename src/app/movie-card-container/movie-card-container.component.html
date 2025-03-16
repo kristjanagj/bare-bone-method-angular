@@ -1,0 +1,9 @@
+<div class="movie-card-container">
+  <div *ngFor="let movie of movies" class="movie-card">
+    <img
+      *ngIf="movie.poster_path"
+      [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
+      alt="Movie Poster"
+    />
+  </div>
+</div>

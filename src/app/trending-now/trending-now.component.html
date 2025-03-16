@@ -1,0 +1,14 @@
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+<h2>{{ title }}</h2>
+<div
+  *ngIf="!errorMessage && trendingMovies.length"
+  class="trending-now-container"
+>
+  <div *ngFor="let movie of trendingMovies" class="trending-now-item">
+    <img
+      *ngIf="movie.poster_path"
+      [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
+      alt="{{ movie.title }} poster"
+    />
+  </div>
+</div>

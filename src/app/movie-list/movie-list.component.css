@@ -1,0 +1,25 @@
+.all-movies {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* This creates 2 equal-width columns */
+  gap: 16px; /* Adds space between the items */
+  margin: 20px 0px;
+}
+.movie-item {
+  display: flex;
+  background-color: #f4f4f4; /* Add a background color */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-item img {
+  border-radius: 8px;
+  height: 200px;
+}
+
+.movie-item h3 {
+  margin: 15px;
+}

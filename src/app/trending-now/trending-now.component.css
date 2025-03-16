@@ -1,0 +1,18 @@
+.trending-now-container {
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.trending-now-item {
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.trending-now-item img {
+  width: 201px;
+  height: auto;
+  border-radius: 8px;
+}
